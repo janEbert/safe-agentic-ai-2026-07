@@ -1,0 +1,18 @@
+{
+  "name": "gliner-js",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Run NVIDIA gliner-PII (DeBERTa-v3-large + GLiNER span head) in pure Node.js stdlib — no npm dependencies, no Python at inference time.",
+  "main": "src/run.js",
+  "bin": { "gliner-js": "src/run.js" },
+  "scripts": {
+    "start": "node --max-old-space-size=4096 src/run.js",
+    "test:loader": "node test/test_torch_load.js",
+    "test:tokenizer": "node test/test_tokenizer.js",
+    "test:model": "node --max-old-space-size=4096 test/test_model.js",
+    "test:model:fast": "node --max-old-space-size=4096 test/test_model.js --fast",
+    "test:e2e": "node --max-old-space-size=4096 test/test_e2e.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}

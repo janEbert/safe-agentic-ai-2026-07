@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Downloaded dataset subsets (auto-named outputs)
+nvidia__*.jsonl
+nvidia__*.csv
+nvidia__*.parquet
+*__*rows_offset*.jsonl
+*__*rows_offset*.csv
+*__*rows_offset*.parquet
+
+# Keep explicitly named outputs if you want them; above only ignores auto-named ones.
+
+# Core dumps / Node
+core
+core.*
+npm-debug.log*

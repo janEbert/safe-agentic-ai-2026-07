@@ -1,0 +1,23 @@
+# Model weights + downloads (large)
+model/
+*.bin
+
+# Reference capture artifacts (regenerable via ref/capture.py)
+ref/*.f32
+ref/*.i64
+ref/ref_state.json
+
+# Test data
+nemotron/
+rows.jsonl
+out.jsonl
+
+# Node
+node_modules/
+*.log
+__pycache__/
+
+# wabt build tool (only needed to regenerate .wasm from .wat; not at runtime)
+.wat2wasm
+.wat2wasm.tmp
+.wabt/

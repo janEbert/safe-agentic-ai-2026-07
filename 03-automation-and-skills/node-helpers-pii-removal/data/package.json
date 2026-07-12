@@ -1,0 +1,11 @@
+{
+  "name": "hf-data-dl",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Download a configurable subset of a HuggingFace dataset using only the Node.js standard library.",
+  "main": "download_subset.js",
+  "bin": { "download-subset": "download_subset.js" },
+  "scripts": { "start": "node download_subset.js" },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
