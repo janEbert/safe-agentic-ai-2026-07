@@ -25,7 +25,7 @@ docker run --gpus all \
   vllm/vllm-openai:latest Qwen/Qwen3.6-27B-FP8 \
     --revision 'e89b16ebf1988b3d6befa7de50abc2d76f26eb09' \
     --trust-remote-code \
-    --server-model-name Qwen/Qwen3.6-27B \
+    --served-model-name Qwen/Qwen3.6-27B \
     --data-parallel-size "$_dp_size" \
     --tensor-parallel-size "$_tp_size" \
     --max-num-batched-tokens 32768 \
