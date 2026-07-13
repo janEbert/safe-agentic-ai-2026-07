@@ -35,7 +35,7 @@ Whichever exercise you pick, the goal is to learn how to automate work with a co
    1. Fetch the data and model, using your agent to do the work.
    2. Let the agent apply the model to the data using arbitrary labels defined by you (e.g., `"first_name"`, `"phone_number"`, `"password"`, `"medical_record_number"`, `"biometric"`, ...).
 
-      If you let the agent set up a Python environment to execute the model, you will get the most-supported interface. However, you can also ask the agent to use the NodeJS helpers in the [`node-helpers-pii-removal` directory](./node-helpers-pii-removal) for everything, since you are already using NodeJS. The helpers were written and optimized by an LLM and not properly reviewed.
+      If you let the agent set up a Python environment to execute the model, you will get the most-supported interface. However, you can also ask the agent to use the NodeJS helpers in the [`node-helpers-pii-removal` directory](./node-helpers-pii-removal) for everything, since you are already using NodeJS. The helpers were written and optimized by an LLM ([GLM-5.2-NVFP4](https://huggingface.co/nvidia/GLM-5.2-NVFP4)) and not properly reviewed.
    3. Once it all works and you verified that the dataset (or a subset of it) is successfully anonymized according to your labels, create an agent skill to repeat this workflow for any future dataset.
 
 ## Agent Skills
