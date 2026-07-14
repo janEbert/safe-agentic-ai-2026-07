@@ -79,6 +79,12 @@ npm exec @anthropic-ai/sandbox-runtime windows-install
 
 Afterwards, log out and back in. If you see an error about a file not being accessible, try to navigate to the `%LocalAppData%\sandbox-runtime` directory to get a permission change pop-up. After confirming the permission change, rerun the above `npm exec` command and log out and back in.
 
+If you want to remove the modifications at some point, you can execute the following uninstall-command:
+
+```shell
+npm exec @anthropic-ai/sandbox-runtime windows-uninstall
+```
+
 #### macOS
 
 Nothing else to do.

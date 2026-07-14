@@ -15,7 +15,8 @@ Using the documentation below, set up `pi` running sandboxed by `srt` with acces
    4. Are you able to connect to an internet address?
    5. Now apply configuration to achieve the opposite behavior for points 2.–4.
 2. Run `pi` sandboxed by `srt`.
-   1. Create a sandbox configuration that allows you to run `pi`, testing to making sure that the boundaries/constraints are properly enforced (prefix a message with `!` to send it as a shell command).
+   1. Create a sandbox configuration that allows you to run `pi`, testing to making sure that the boundaries/constraints are properly enforced (prefix a message with `!` to send it as a shell command).  
+      Note, on Windows you'd run like `.\srt -- pi`.
    2. Also make sure that inside `pi`, you can configure its behavior. For example, try to set a different theme with `/settings` and make sure it stays configured when you restart `pi`.  
       This requires you to make your `PI_CODING_AGENT_DIR`, by default `~/.pi/agent`, writable.
 3. Add your self-hosted model endpoint to `pi`.
